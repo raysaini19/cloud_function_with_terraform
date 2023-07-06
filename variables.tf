@@ -6,8 +6,8 @@ variable "region" {
   default = "europe-west2"
 }
 
-### Cloud function Gen-2 
 variable "service_account_email" {
-  type = string
+  type    = string
   default = "project-service-account@gcp-project-390708.iam.gserviceaccount.com"
+
 }
