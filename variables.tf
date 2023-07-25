@@ -9,5 +9,4 @@ variable "region" {
 variable "service_account_email" {
   type    = string
   default = "project-service-account@gcp-project-390708.iam.gserviceaccount.com"
-
 }

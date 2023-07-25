@@ -8,8 +8,8 @@ terraform {
   }
 }
 
-# provider "google" {
-#   credentials = file("gcp-project.json")
-#   project     = var.project_id
-#   region      = var.region
-# }
+provider "google" {
+  # credentials = file("gcp-project.json")
+  # project     = var.project_id
+  # region      = var.region
+}

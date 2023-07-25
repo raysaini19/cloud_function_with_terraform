@@ -1,7 +1,7 @@
-locals {
-  services = [
-    "pubsub.googleapis.com",
-    "cloudbuild.googleapis.com",
-    "cloudfunctions.googleapis.com"
-  ]
-}
+# locals {
+#   services = [
+#     "pubsub.googleapis.com",
+#     "cloudbuild.googleapis.com",
+#     "cloudfunctions.googleapis.com"
+#   ]
+# }

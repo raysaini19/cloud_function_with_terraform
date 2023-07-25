@@ -1,16 +1,16 @@
-resource "google_project_service" "services" {
-  for_each = toset(local.services)
-  project  = var.project_id
-  service  = each.key
-  provisioner "local-exec" {
-    command = "sleep 45"
-  }
-  provisioner "local-exec" {
-    when    = destroy
-    command = "sleep 45"
-  }
-  disable_dependent_services = false
-}
+# resource "google_project_service" "services" {
+#   for_each = toset(local.services)
+#   project  = var.project_id
+#   service  = each.key
+#   provisioner "local-exec" {
+#     command = "sleep 45"
+#   }
+#   provisioner "local-exec" {
+#     when    = destroy
+#     command = "sleep 45"
+#   }
+#   disable_dependent_services = false
+# }
 
 
 # resource "google_project_service" "cloud_functions_api" {
