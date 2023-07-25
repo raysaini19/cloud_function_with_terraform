@@ -5,15 +5,11 @@ terraform {
       source  = "hashicorp/google"
       version = "~> 4.69.1"
     }
-    local = {
-      source  = "hashicorp/local"
-      version = ">= 2.0.0"
-    }
   }
 }
 
-# provider "google" {
-#   credentials = file("gcp-project.json")
-#   project     = var.project_id
-#   region      = var.region
-# }
+provider "google" {
+  # credentials = file("gcp-project.json")
+  # project     = var.project_id
+  # region      = var.region
+}
